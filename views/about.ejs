@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <%- include('partials/head', { title, pageName }) %>
+  <body class="d-flex flex-column min-vh-100">
+    <%- include('partials/navbar', { title, pageName }) %>
+
+    <main class="container py-5 flex-grow-1">
+      <section class="mb-4">
+        <h1 class="h2 fw-semibold">About</h1>
+        <p class="text-secondary">This page tells you all about us.</p>
+      </section>
+
+      <div class="card shadow-sm">
+        <div class="card-body p-4">
+          <p class="mb-1">The value of <code>SITE_TITLE</code> is:</p>
+          <p class="fs-5 fw-semibold"><%= title %></p>
+        </div>
+      </div>
+
+      <div class="card shadow-sm mt-4">
+        <div class="card-body p-4 text-center">
+          <h2 class="h5 mb-2">Total Visitors</h2>
+          <div class="fs-1 fw-bold gradient-text"><%= count %></div>
+          <p class="mt-2 text-secondary">Our site has been visited <%= count %> times!</p>
+        </div>
+      </div>
+    </main>
+
+    <%- include('partials/footer') %>
+  </body>
+</html>

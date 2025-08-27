@@ -1,0 +1,14 @@
+:root{
+  --brand-h: 265;
+  --brand-s: 90%;
+  --brand-l: 55%;
+}
+body{ text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+.gradient-text{
+  background: linear-gradient(45deg, hsl(var(--brand-h) var(--brand-s) var(--brand-l)), hsl(calc(var(--brand-h) - 45) 85% 55%));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.card{ border-radius: 1rem; }
+.navbar, footer{ backdrop-filter: saturate(120%) blur(4px); }

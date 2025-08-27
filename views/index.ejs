@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <%- include('partials/head', { title, pageName }) %>
+  <body class="d-flex flex-column min-vh-100">
+    <%- include('partials/navbar', { title, pageName }) %>
+
+    <main class="container py-5 flex-grow-1">
+      <section class="text-center mb-5">
+        <h1 class="display-5 fw-semibold mb-3">Welcome to Azure intern app<%= title %></h1>
+        <p class="lead text-secondary">This is the Umer's app (ehhehehehh) <span class="fw-semibold"><%= pageName %></span> page of our app.</p>
+      </section>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6">
+          <div class="card shadow-sm h-100">
+            <div class="card-body p-4">
+              <h2 class="h4 mb-3">Environment</h2>
+              <p class="mb-0">The value of <code>SITE_TITLE</code> is:</p>
+              <p class="fs-4 fw-semibold"><%= title %></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="card shadow-sm h-100">
+            <div class="card-body p-4 text-center">
+              <h2 class="h4 mb-3">Total Visitors</h2>
+              <div class="display-4 fw-bold gradient-text"><%= count %></div>
+              <p class="mt-2 text-secondary">Our site has been visited <%= count %> times!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('partials/footer') %>
+  </body>
+</html>
