@@ -1,3 +1,7 @@
+console.log('=== APP STARTING ===');
+console.log('Current directory:', __dirname);
+console.log('Port:', process.env.PORT);
+console.log('Node version:', process.version);
 const express = require("express");
 const path = require("path");
 const app = express();
